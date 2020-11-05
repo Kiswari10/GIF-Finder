@@ -9,10 +9,11 @@ export const GifExpertApp = () => {
   ]);
   return (
     <>
-    <AddCategory />
-      <button onClick={() => setCategories((prev) => [...prev, "Dragon Ball"])}>
+      <h1 className='logo'>GIF-Finder</h1>
+      <AddCategory />
+      {/* <button onClick={() => setCategories((prev) => [...prev, "Dragon Ball"])}>
         Agregar
-      </button>
+      </button> */}
       {categories.map((elem) => (
         <li style={{ color: "white" }}>{elem}</li>
       ))}
