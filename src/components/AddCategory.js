@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -66,4 +67,8 @@ export const AddCategory = ({ setCategories }) => {
       </Form>
     </>
   );
+};
+
+AddCategory.propTypes = {
+  setCategories: PropTypes.func.isRequired,
 };
