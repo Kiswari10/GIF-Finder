@@ -32,14 +32,14 @@ const Form = styled.form`
   }
 `;
 
-export const AddCategory = ( ) => {
+export const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState("");
   const handleInputValue = (event) => {
     setInputValue(event.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("OK");
+    setCategories((prev) => [inputValue, ...prev]);
   };
   return (
     <>
