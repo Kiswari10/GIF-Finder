@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { GifCard } from "./GifCard";
+import { CardColumns } from "react-bootstrap";
 
 export const GifGrid = ({ category }) => {
   const [gifs, setGifs] = useState([]);
   useEffect(() => {
     const getGifs = async () => {
       const response = await fetch(
-        `http://api.giphy.com/v1/gifs/search?q=${category}&limit=10&api_key=PIJ9beNH3hdjavbtzJ5Nje2FdpV8cp0D`
+        `http://api.giphy.com/v1/gifs/search?q=${category}&limit=12&api_key=PIJ9beNH3hdjavbtzJ5Nje2FdpV8cp0D`
       );
       const { data } = await response.json();
       const _gifs = data.map((img) => ({
@@ -21,12 +22,12 @@ export const GifGrid = ({ category }) => {
   }, [category]);
   return (
     <div>
-      <h3 style={{ color: "white" }}>{category}</h3>
-      <ol>
+      <h3 className="logo">{category}</h3>
+      <CardColumns>
         {gifs.map((gif) => (
           <GifCard {...gif} key={gif.id} />
         ))}
-      </ol>
+      </CardColumns>
     </div>
   );
 };
