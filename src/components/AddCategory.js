@@ -7,7 +7,6 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Form = styled.form`
   width: 100%;
   height: 55px;
-  background-color: red;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -25,6 +24,7 @@ const Form = styled.form`
     background-image: linear-gradient(45deg, #16bf69, #22c4dc 51%, #16bf69);
     height: 100%;
     width: 8%;
+    min-width: 40px;
     border: none;
     outline: none;
     cursor: pointer;
