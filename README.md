@@ -11,4 +11,4 @@ Aplicación hecha en React con Hooks, que permite buscar gifs animados.
 
 
 - Esta aplicación fue hecha con fines académicos.
-- Usa el API GIPHY [GIPHY](https://developers.giphy.com/).
+- Usa el API [GIPHY](https://developers.giphy.com/).
