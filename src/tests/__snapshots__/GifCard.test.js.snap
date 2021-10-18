@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test en <GifCard /> debe retornar el componente correctamente 1`] = `
+<Card
+  body={false}
+  className="animate__animated animate__fadeIn"
+>
+  <CardImg
+    alt="Goku"
+    src="https://localhos.pe"
+    variant={null}
+  />
+</Card>
+`;
