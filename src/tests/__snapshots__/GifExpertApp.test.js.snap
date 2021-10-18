@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test en <GifExpertApp /> debe retornar el componente correctamente 1`] = `
+<Container
+  fluid={false}
+>
+  <h1
+    className="logo"
+  >
+    GIF-Finder
+  </h1>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <GifGrid
+    category="Naruto"
+    key="Naruto"
+  />
+</Container>
+`;
