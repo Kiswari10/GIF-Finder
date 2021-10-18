@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <AddCategory /> debe de retornar el componente correctamente 1`] = `
+<Fragment>
+  <styled.form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      placeholder="Search GIFs"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      <ContextProvider
+        value={
+          Object {
+            "color": "white",
+            "fontWeight": "bold",
+            "size": "60%",
+          }
+        }
+      >
+        <AiOutlineSearch />
+      </ContextProvider>
+    </button>
+  </styled.form>
+</Fragment>
+`;
