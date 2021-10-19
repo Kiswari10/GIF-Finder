@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pruebas en <GifGrid /> debe mostrar imagenes cuando se carga data con useFetchGifs 1`] = `
+<div>
+  <h3
+    className="logo animate__animated animate__fadeIn"
+  >
+    Goku
+  </h3>
+  <CardColumns>
+    <GifCard
+      id="123"
+      key="123"
+      title="Una imagen"
+      url="http://localhost/image.jpg"
+    />
+  </CardColumns>
+</div>
+`;
+
 exports[`Pruebas en <GifGrid /> debe retornar el componente correctamente 1`] = `
 <div>
   <h3
