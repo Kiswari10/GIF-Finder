@@ -33,6 +33,8 @@ const Form = styled.form`
   }
 `;
 
+Form.displayName = "form";
+
 export const AddCategory = ({ setCategories }) => {
   const [inputValue, setInputValue] = useState("");
   const handleInputValue = (event) => {

@@ -2,7 +2,7 @@
 
 exports[`Pruebas en <AddCategory /> debe de retornar el componente correctamente 1`] = `
 <Fragment>
-  <styled.form
+  <form
     onSubmit={[Function]}
   >
     <input
@@ -25,6 +25,6 @@ exports[`Pruebas en <AddCategory /> debe de retornar el componente correctamente
         <AiOutlineSearch />
       </ContextProvider>
     </button>
-  </styled.form>
+  </form>
 </Fragment>
 `;

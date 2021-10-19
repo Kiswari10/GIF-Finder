@@ -1,11 +1,17 @@
 import React from "react";
+import "@testing-library/jest-dom";
+
 import { shallow } from "enzyme";
 
 import { AddCategory } from "../components/AddCategory";
 
 describe("Pruebas en <AddCategory />", () => {
-  const setCategories = () => {};
-  const wraper = shallow(<AddCategory setCategories={setCategories} />);
+  const setCategories = jest.fn();
+  let wraper = shallow(<AddCategory setCategories={setCategories} />);
+
+  beforeEach(() => {
+    wraper = shallow(<AddCategory setCategories={setCategories} />);
+  });
 
   test("debe de retornar el componente correctamente", () => {
     expect(wraper).toMatchSnapshot();
@@ -18,5 +24,11 @@ describe("Pruebas en <AddCategory />", () => {
     const inputAfter = wraper.find("input");
 
     expect(inputAfter.props().value).toBe(value);
+  });
+
+  test("No debe enviar información con submit si el value del input esta vacío", () => {
+    const form = wraper.find("form");
+    form.simulate("submit", { preventDefault() {} });
+    expect(setCategories).not.toHaveBeenCalled();
   });
 });
