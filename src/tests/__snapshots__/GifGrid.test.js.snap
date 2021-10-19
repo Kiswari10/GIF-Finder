@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGrid /> debe retornar el componente correctamente 1`] = `
+<div>
+  <h3
+    className="logo animate__animated animate__fadeIn"
+  >
+    Goku
+  </h3>
+  <Spinner
+    animation="border"
+  />
+</div>
+`;

@@ -1,5 +1,7 @@
 import React from "react";
+import propTypes from "prop-types";
 import { CardColumns, Spinner } from "react-bootstrap";
+
 import { useFetchGifs } from "../hooks/useFetchGifs";
 import { GifCard } from "../components/GifCard";
 
@@ -19,4 +21,8 @@ export const GifGrid = ({ category }) => {
       )}
     </div>
   );
+};
+
+GifGrid.propTypes = {
+  category: propTypes.string.isRequired,
 };
