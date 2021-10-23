@@ -6,6 +6,7 @@ Aplicación hecha en React con Hooks, que permite buscar gifs animados.
 1. Hooks: useState y useEffect
 2. Uso de variables de entorno
 3. Pipelines en Azure DevOps
+4. Tests con jest, enzyme y @testing-library/react-hooks
 
 ### Desplegado en: Azure App Service 
 
